@@ -1,0 +1,602 @@
+/* Combined and Modified CSS */
+
+:root {
+    --light-purple: #7b009a; /* Lighter shade of purple */
+}
+
+/* General Styles */
+.section-padding {
+    padding: 60px 0;
+}
+
+.highlight {
+    color: var(--light-purple);
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-left {
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+.slide-right {
+    animation: slideFromRight 1s ease-out forwards;
+}
+
+.slide-top {
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+.slide-bottom {
+    animation: slideFromBottom 1s ease-out forwards;
+}
+
+@keyframes colorChange {
+    0% { color: #ffffff; }
+    100% { color: #e0e0e0; }
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Diğer içeriklerin üzerinde kalmasını sağlar */
+}
+
+.bg-purple {
+    background-color: var(--light-purple) !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav, .nav-item, .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease;
+    border: 2px solid black;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.dropdown-item {
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-purple); /* Updated to use variable */
+}
+
+.border-3 {
+    border-width: 3px !important;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-0 {
+    border-radius: 0 !important; /* Köşeleri tamamen düz yapar */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .contact-info-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Carousel Styles */
+#carouselExample {
+    max-width: 1000px; /* Carousel'in maksimum genişliği */
+    margin: 0 auto; /* Carousel'i sayfada ortala */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 70vh; /* Adjusted from both blocks, using the larger value and viewport height */
+    object-fit: contain; /* Kept from the second definition */
+    margin: auto; /* Kept from the second definition */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--light-purple); /* Updated to use variable */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Hizmetler (Services) Section */
+.hizmetler {
+    padding: 20px 0;
+}
+
+.hizmet-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, opacity 1s ease, transform 1s ease; /* Combined transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Added from first block */
+    opacity: 0; /* Initial state for animation */
+    transform: translateX(-50px); /* Initial state for animation */
+}
+
+.hizmet-card:hover {
+    transform: scale(1.05);
+}
+
+.hizmet-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hizmet-card h3 {
+    color: var(--light-purple) !important; /* Updated to use variable */
+    font-weight: bold;
+}
+
+.hizmet-card .detay-btn {
+    background-color: var(--light-purple) !important; /* Updated to use variable */
+    color: #ffffff !important;
+    border-color: var(--light-purple) !important; /* Updated to use variable */
+}
+
+.detay-btn {
+    transition: transform 0.2s;
+    margin-top: 10px; /* Added from first block */
+}
+
+.detay-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Temizlik (Cleaning) Image */
+.temizlik-resim {
+    max-width: 110%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+/* Accordion Styles */
+.accordion-button {
+    color: black !important; /* Soruların rengini siyah yapar */
+    font-weight: bold; /* Soruları kalın yapar (isteğe bağlı) */
+}
+
+/* Yorumlar (Reviews) Carousel */
+#yorumCarousel h2 {
+    color: #100c0d02; /* Başlık rengi siyah */
+}
+
+.carousel-item .card {
+    max-width: 600px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/* Yorum Kartları İçin Stil */
+.card {
+    background-color: #FFFFFF; /* Kart arka plan rengi beyaz */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #000000; /* Yıldızlar için siyah renk */
+}
+
+.card-text {
+    color: #000000; /* Yorum metni için siyah renk */
+}
+
+.text-muted {
+    color: #6c757d !important; /* Yorum yapan kişi adı için gri renk */
+}
+
+/* Referanslar (References) Section */
+.references-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.references-section h2 {
+    color: var(--light-purple); /* Updated to use variable */
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.reference-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.reference-card:hover {
+    transform: translateY(-10px);
+}
+
+.reference-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.reference-card h4 {
+    color: var(--light-purple); /* Updated to use variable */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.reference-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Telefon Butonu (Phone Button) */
+.phone-vr{
+    z-index: 1000;
+    position: fixed; /* Fixed position for the button */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.phone-vr a {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    padding: 0; /* Remove padding to maintain round shape */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.phone-vr button { /* Styles for the button tag in the second block */
+    background-color: rgb(0, 205, 0); /* Background color */
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    padding: 0; /* Remove padding to maintain round shape */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.phone-vr button:hover {
+    transform: scale(1.15);
+    background-color: rgb(0, 205, 0);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--light-purple) !important; /* Updated to use variable */
+}
+
+/* Galeri (Gallery) Section */
+.gallery-section img {
+    width: 100%; /* Kartın genişliğine uyacak şekilde */
+    height: auto; /* Oranları koruyarak küçültme */
+    max-width: 300px; /* Maksimum genişlik belirleme */
+    max-height: 500px; /* Maksimum yükseklik belirleme */
+    object-fit: cover; /* Görüntüyü düzgün kırpma */
+}
+
+.gallery-section h2 {
+    color: var(--light-purple); /* Updated to use variable */
+    font-weight: bold; /* Kalın yazı */
+}
+/* AOS Animation Duration */
+[data-aos] {
+    transition-duration: 2.5s !important; /* Varsayılan süreden daha uzun yap */
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+.about-section h2 {
+    color: #060123;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+.about-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mission-vision {
+    padding: 60px 0;
+}
+.mission-vision h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.team-section {
+    padding: 60px 0;
+}
+.team-section h2 {
+    color: #C8A2C8;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.team-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.team-card img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.team-card h4 {
+    color: #C8A2C8;
+    font-weight: bold;
+}
+.team-card p {
+    color: #777;    
+}
+.contact-section {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+.contact-section h2 {
+    color: var(--light-purple);
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.contact-info {
+    margin-bottom: 40px;
+}
+.contact-info i {
+    color: var(--light-purple);
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+}
+.social-links a {
+    color: var(--light-purple);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--light-purple);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.references-section {
+    padding: 60px 0;
+}
+.references-section h2 {
+    color: var(--light-purple);
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.reference-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.reference-card:hover {
+    transform: translateY(-10px);
+}
+.reference-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.reference-card h4 {
+    color: var(--light-purple);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.reference-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.text-purple {
+    color: var(--light-purple);
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* Ensures 5-star appears first */
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+/* Highlight stars when hovered */
+.star:hover,
+.star:hover ~ label {
+    color: gold;
+}
+
+/* Highlight selected stars */
+input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+/* Add animation for hover */
+.star:hover,
+.star:hover ~ label {
+    animation: glow 0.3s ease-in-out;
+}
+
+@keyframes glow {
+    0% { color: gold; }
+    50% { color: #e89000; }
+    100% { color: gold; }
+}
+
+/* Add animation for selected stars */
+input[type="radio"]:checked ~ label {
+    animation: glow 0.3s ease-in-out;
+}

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/tasarim.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Karçiçeği Temizlik</title>
+  </head>
+  <body>
+    <div class="phone-vr position-fixed bottom-0 end-0 m-3">
+      <a href="https://api.whatsapp.com/send?phone=905400293838">
+        <button
+          type="button"
+          class="btn rounded-circle p-0"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Whatsapp"
+        >
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </button>
+      </a>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-lg bg-purple py-2 border-3 border-black rounded-0"
+    >
+      <div class="container-fluid px-0">
+        <a class="navbar-brand ms-3" href="./anasayfa.html">
+          <img src="./images/logo.jpg" alt="Logo" width="60" height="60" />
+        </a>
+
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3 rounded" href="./anasayfa.html"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold px-3 rounded"
+                id="navbarDropdownkurumsal"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kurumsal
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownHakkimizda"
+              >
+                <li>
+                  <a class="dropdown-item" href="./hakkimizda.html"
+                    >Hakkımızda</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./referanslarimiz.html"
+                    >Referanslarımız</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./musteri-gorusleri.html"
+                    >Müşteri Görüşleri</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold px-3 rounded"
+                id="navbarDropdownHizmetler"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hizmetler
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownHizmetler"
+              >
+                <li>
+                  <a class="dropdown-item" href="./ev-temizligi.html"
+                    >Ev Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./ofis-temizligi.html"
+                    >Ofis Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./insaat-sonrasi-temizligi.html"
+                    >İnşaat Sonrası Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./hastane-temizligi.html"
+                    >Hastane Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./dezenfeksiyon.html"
+                    >Dezenfeksiyon İşlemi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./yurt-temizligi.html"
+                    >Yurt Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./fabrika-temizligi.html"
+                    >Fabrika Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./isyeri-temizligi.html"
+                    >İşyeri Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./idari-bina-temizligi.html"
+                    >İdari Bina Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./villa-temizligi.html"
+                    >Villa Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./dis-cephe-temizligi.html"
+                    >Dış Cephe Temizliği</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./yerinde-hali-yikama.html"
+                    >Yerinde Halı Yıkama</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3 rounded" href="./iletisim.html"
+                >İletişim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3 rounded" href="./galeri.html"
+                >Galeri</a
+              >
+            </li>
+          </ul>
+
+          <div
+            class="d-flex align-items-center border-3 border-black rounded-4 px-3 me-3"
+          >
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <i class="fa-solid fa-phone text-white"></i>
+              <a
+                href="tel:+905400293838"
+                class="text-white text-decoration-none px-2"
+                >+90 540 029 38 38</a
+              >
+
+              <i class="fa-solid fa-envelope text-white"></i>
+              <a
+                href="mailto:karcicegitemizlik38@gmail.com"
+                class="text-white text-decoration-none px-2"
+                >karcicegitemizlik38@gmail.com</a
+              >
+
+              <div class="d-flex gap-2">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61574538445707"
+                  class="text-decoration-none"
+                >
+                  <i
+                    class="fa-brands fa-facebook text-white"
+                    style="font-size: 20px"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/karcicegi_temizlik38/"
+                  class="text-decoration-none"
+                >
+                  <i
+                    class="fa-brands fa-instagram text-white"
+                    style="font-size: 20px"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-padding hidden" data-animation="fade-in">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-4 fw-bold">
+            Karçiçeği Temizlik: Yerinde Halı Yıkama ile Kolay ve Etkili Çözüm!
+          </h2>
+          <p class="lead">
+            Karçiçeği Temizlik olarak, yerinde halı yıkama hizmetimizle
+            halılarınızı evinizden veya işyerinizden taşımadan, ilk günkü
+            temizliğine kavuşturuyoruz. Halılar, ev ve işyerlerinin önemli bir
+            parçası olup, zamanla toz, kir, leke ve alerjenleri biriktirirler.
+            Amacımız, profesyonel ekipman ve uzman ekibimizle halılarınızın
+            derinlemesine temizliğini sağlayarak sağlıklı ve ferah bir ortam
+            sunmaktır.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-light section-padding hidden"
+      data-animation="slide-right"
+    >
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-4 fw-bold">Neden Karçiçeği Temizlik?</h2>
+          <div class="row g-4">
+            <div
+              class="col-md-6 hidden"
+              data-animation="slide-right"
+              style="--animation-delay: 0.1s"
+            >
+              <p>
+                <span class="highlight">Uzman ve Deneyimli Ekip:</span> Halı
+                yıkama konusunda özel eğitim almış ekibimiz, halılarınızın
+                yapısına uygun temizlik tekniklerini ve ürünlerini kullanarak
+                maksimum temizlik sağlar.
+              </p>
+            </div>
+            <div
+              class="col-md-6 hidden"
+              data-animation="slide-left"
+              style="--animation-delay: 0.2s"
+            >
+              <p>
+                <span class="highlight"
+                  >Modern Ekipman ve Güçlü Sistemler:</span
+                >
+                Profesyonel halı yıkama makineleri ve buharlı temizleyiciler
+                kullanarak halılarınızın derinliklerindeki kir ve alerjenleri
+                etkili bir şekilde temizleriz.
+              </p>
+            </div>
+            <div
+              class="col-md-6 hidden"
+              data-animation="slide-right"
+              style="--animation-delay: 0.3s"
+            >
+              <p>
+                <span class="highlight">Çevre Dostu ve Güvenli Ürünler:</span>
+                Halılarınızın dokusuna zarar vermeyen, insan sağlığına duyarlı
+                ve çevre dostu, leke çıkarıcı ve şampuanlar kullanırız.
+              </p>
+            </div>
+            <div
+              class="col-md-6 hidden"
+              data-animation="slide-left"
+              style="--animation-delay: 0.4s"
+            >
+              <p>
+                <span class="highlight">Hızlı ve Yerinde Çözüm:</span>
+                Halılarınızı taşımaya gerek kalmadan, kendi yerinde kısa sürede
+                yıkar ve kurumaya bırakırız, böylece günlük yaşamınız aksamaz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding hidden" data-animation="slide-left">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-4 fw-bold">
+              Yerinde Halı Yıkama Hizmetimiz Kapsamında Neler Var?
+            </h2>
+            <ul class="list-unstyled">
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-right"
+                style="--animation-delay: 0.1s"
+              >
+                <span class="highlight">Halı Tipi Analizi:</span> Halınızın
+                dokusu, malzemesi ve kirlilik derecesine göre en uygun yıkama
+                yönteminin belirlenmesi.
+              </li>
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-left"
+                style="--animation-delay: 0.2s"
+              >
+                <span class="highlight">Derinlemesine Vakumlama:</span> Yıkama
+                öncesi halı yüzeyindeki kaba kir ve tozun güçlü vakum makineleri
+                ile alınması.
+              </li>
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-right"
+                style="--animation-delay: 0.3s"
+              >
+                <span class="highlight">Leke Çıkarma Uygulamaları:</span> Halı
+                üzerindeki inatçı lekeler için özel leke çıkarıcı ürünlerle ön
+                uygulama.
+              </li>
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-left"
+                style="--animation-delay: 0.4s"
+              >
+                <span class="highlight">Profesyonel Yıkama ve Durulama:</span>
+                Halının tüm yüzeyine şampuan ve su püskürtülerek, fırçalama ve
+                vakumla çekme yöntemiyle derinlemesine yıkama ve durulama.
+              </li>
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-right"
+                style="--animation-delay: 0.5s"
+              >
+                <span class="highlight">Koku Giderme ve Dezenfeksiyon:</span>
+                Halının içinde biriken kötü kokuların giderilmesi ve alerjenlere
+                karşı dezenfeksiyon işlemi.
+              </li>
+              <li
+                class="mb-3 hidden"
+                data-animation="slide-left"
+                style="--animation-delay: 0.6s"
+              >
+                <span class="highlight">Hızlı Kurutma:</span> Halıdaki suyun
+                maksimum düzeyde çekilmesi ve halının hızlı kurumasını
+                sağlayacak yöntemlerin uygulanması.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-6 hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.3s"
+          >
+            <img
+              src="./images/hali-yikama.jpg"
+              alt="Yerinde Halı Yıkama"
+              class="img-fluid temizlik-resim"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light section-padding hidden" data-animation="slide-top">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-4 fw-bold">Yerinde Halı Yıkama Neden Önemlidir?</h2>
+          <p class="lead">
+            Halılar, günlük kullanımla birlikte toz, kir, bakteri ve alerjenler
+            için uygun bir yaşam alanı haline gelir. Özellikle astım ve alerjisi
+            olan kişiler için bu durum sağlık sorunlarına yol açabilir. Yerinde
+            halı yıkama hizmetimizle, halılarınızı taşıma zahmetine girmeden,
+            derinlemesine temizleyerek ev veya işyerinizde daha sağlıklı bir
+            hava kalitesi sağlıyoruz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding hidden" data-animation="fade-in">
+      <div class="container">
+        <h2 class="mb-4 fw-bold text-center">
+          Yerinde Halı Yıkama ile İlgili Sık Sorulan Sorular
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <div
+            class="accordion-item hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.1s"
+          >
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Halılarım ne kadar sürede kurur?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Halılarınızın kuruma süresi, halının kalınlığına, kullanılan
+                yıkama yöntemine ve ortamın nemine bağlı olarak değişmekle
+                birlikte, genellikle 2-6 saat içinde kurur.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.2s"
+          >
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Tüm halı tipleri için uygun mu?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Evet, yün, sentetik, el dokuması gibi farklı halı tiplerine
+                uygun özel yıkama ve temizlik teknikleri kullanıyoruz.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.3s"
+          >
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Yerinde koltuk yıkama hizmetiniz var mı?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Evet, yerinde halı yıkamanın yanı sıra, yerinde koltuk yıkama
+                hizmeti de sunmaktayız.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.4s"
+          >
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Halıları yıkamadan önce hazırlık yapmam gerekiyor mu?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Halıların üzerindeki eşyaları kaldırmanız yeterlidir. Diğer tüm
+                hazırlıkları ekibimiz profesyonelce yapacaktır.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item hidden"
+            data-animation="fade-in"
+            style="--animation-delay: 0.5s"
+          >
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Fiyatlandırma nasıl yapılıyor?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Fiyatlandırma, yıkanacak halının metrekaresi, halı tipi ve
+                kirlilik derecesine göre belirlenir. Detaylı bilgi ve teklif
+                almak için bizimle iletişime geçebilirsiniz.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-light section-padding hidden"
+      data-animation="slide-bottom"
+    >
+      <div class="container text-center">
+        <h2 class="mb-4 fw-bold">
+          Halınızda Derinlemesine Temizlik ve Ferahlık İçin Karçiçeği Temizlik!
+        </h2>
+        <p class="lead">
+          Karçiçeği Temizlik olarak, yerinde halı yıkama hizmetimizle
+          halılarınızın ömrünü uzatıyor, renklerini canlandırıyor ve evinizde
+          daha sağlıklı bir atmosfer yaratıyoruz. Pratik, etkili ve güvenilir
+          temizlik için bize ulaşın!
+        </p>
+      </div>
+    </section>
+
+    <footer class="py-5 hidden" data-animation="fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-white">
+            <h5 class="fw-bold">Karçiçeği Temizlik</h5>
+            <hr class="border-info-subtle" style="width: 100%" />
+            <p>
+              Temizlikte kalite ve hijyenin adresi! Karçiçeği Temizlik olarak,
+              her türlü temizlik ihtiyacınıza profesyonel çözümler sunuyoruz. Ev
+              temizliğinden ofis temizliğine, inşaat sonrası temizlikten
+              dezenfeksiyona kadar geniş hizmet yelpazemizle yanınızdayız.
+            </p>
+            <div class="d-flex gap-2 justify-content-center">
+              <a
+                href="https://www.facebook.com/profile.php?id=61574538445707"
+                class="text-white fs-5"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/karcicegi_temizlik38/"
+                class="text-white fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center text-white">
+            <h5 class="fw-bold">Menüler</h5>
+            <hr class="border-info-subtle" style="width: 100%" />
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./anasayfa.html"
+                  class="text-white text-decoration-none"
+                  >Anasayfa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./hakkimizda.html"
+                  class="text-white text-decoration-none"
+                  >Hakkımızda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ev-temizligi.html"
+                  class="text-white text-decoration-none"
+                  >Hizmetlerimiz</a
+                >
+              </li>
+              <li>
+                <a href="./galeri.html" class="text-white text-decoration-none"
+                  >Galerimiz</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./iletisim.html"
+                  class="text-white text-decoration-none"
+                  >İletişim</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center text-white">
+            <h5 class="fw-bold">Sorunuz mu var?</h5>
+            <hr class="border-info-subtle" style="width: 100%" />
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> Esenyurt,
+                Erman Sk. No:22 D:2, 38050 Melikgazi/Kayseri
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><a
+                  href="tel:+905400293838"
+                  class="text-white text-decoration-none px-2"
+                  >+90 540 029 3838</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i
+                ><a
+                  href="mailto:karcicegitemizlik38@gmail.com"
+                  class="text-white text-decoration-none px-2"
+                  >karcicegitemizlik38@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 text-white">
+          <small
+            >Copyright ©2025 All rights reserved | Made by
+            <a href="https://www.linkedin.com/in/oguz-selman-cetin/"
+              >Oğuz Selman Çetin</a
+            >
+            and
+            <a href="https://www.linkedin.com/in/osman-t%C3%BCzen-571b7133a/"
+              >Osman Tüzen</a
+            ></small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/animation.js"></script>
+  </body>
+</html>
